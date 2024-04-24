@@ -6,3 +6,11 @@ Amqp atau Advanced message queing protocol adalah standard open layer protocol y
 - `guest:guest` merupakan username dan password agar terautentikasi server. 
 - `localhost` menunjukkan host yaitu localhost atau lokal. 
 - `5672` adalah nomor port untuk amqp.
+
+**Simulation slow subscriber**
+![alt text](<Screenshot (788).png>)
+Spike yang lebih tinggi menunjukkan rate message yang lebih besar
+
+**Running at least three subscribers**
+![alt text](<Screenshot (790).png>)
+Terdapat spike pada chart pertama menunjukkan adanya message yang terqueue. Message terqueue karena publisher mengirimkan message lebih cepat dibanding subscriber menerima message.
